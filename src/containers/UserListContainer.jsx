@@ -22,7 +22,7 @@ export default function UserListContainer() {
 	// }, [dispatch])
 
 	const getUsers = useCallback(() => {
-		dispatch(getUsersPromise)
+		dispatch(getUsersPromise())
 	}, [dispatch])
 
 	return <UserList users={users} getUsers={getUsers} />
